@@ -252,7 +252,7 @@ from discord.ext import commands
 #from config import settings
 
 def discord_bot(def_for_run):
-        settings = {'token': 'ODIyNTM1MTYwNjM3MjkyNjE0.YFTrkA.5ow3C1AODjP7YQaDpkgfd-TNY0s'}
+        settings = {'token': 'ODIyNTM2521MTYwNjM3M25TrkA.9IXDI52XyGdak5353535'}
         #self.bot = commands.Bot(command_prefix = self.settings['prefix'])
         client = discord.Client()
         @client.event
@@ -329,7 +329,8 @@ def discord_bot(def_for_run):
                 else:
                     await message.channel.send('Вообще не похоже на комнду.')
             except:
-                await message.channel.send('Не правильная команда!!!')
+                pass
+                #await message.channel.send('Не правильная команда!!!')
 
         client.run(settings['token'])
 
